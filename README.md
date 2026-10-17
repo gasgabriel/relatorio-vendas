@@ -78,10 +78,6 @@ gerar_dados.py     gera uma planilha fictícia e "suja"
 - O relatório é estático: não atualiza sozinho (o agendamento vem do `cron`).
 - Dados são fictícios.
 
-## Próximos passos
-
-Veja as [issues abertas](https://github.com/gasgabriel/relatorio-vendas/issues): salvar as linhas descartadas em um CSV, filtrar por período e trocar `float` por `Decimal`.
-
 ## Autores
 
 gasgabriel & taleticia
