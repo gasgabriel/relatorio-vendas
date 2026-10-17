@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Relatório de vendas</title>
+<style>
+:root{--ink:#1b2430;--muted:#5b6675;--line:#dde2e8;--bg:#f5f7f9;--card:#fff;--accent:#0c7c80}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,sans-serif}
+main{max-width:860px;margin:0 auto;padding:24px 16px 48px}
+h1{margin:0 0 4px;font-size:28px}
+h2{margin:32px 0 8px;font-size:20px}
+.sub{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.card span{display:block;color:var(--muted);font-size:13px}
+.card b{font-size:22px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th,td{padding:8px 12px;text-align:left;border-bottom:1px solid var(--line)}
+td.n,th.n{text-align:right}
+tr:last-child td{border-bottom:0}
+.chart{width:100%;height:auto;background:var(--card);border:1px solid var(--line);border-radius:12px}
+.qualidade{background:#fff8e8;border:1px solid #ecd9a6;border-radius:12px;padding:12px 16px}
+@media print{body{background:#fff}.card,table,.chart{break-inside:avoid}}
+</style>
+</head>
+<body>
+<main>
+<h1>Relatório de vendas</h1>
+<p class="sub">Período: 01/01/2026 a 28/10/2026</p>
+<div class="cards"><div class="card"><span>Receita total</span><b>R$ 364.918,33</b></div><div class="card"><span>Vendas</span><b>953</b></div><div class="card"><span>Itens vendidos</span><b>5.276</b></div><div class="card"><span>Ticket médio</span><b>R$ 382,92</b></div></div>
+<h2>Receita por mês</h2>
+<svg class="chart" viewBox="0 0 640 240" role="img" aria-label="Receita por mês"><rect x="12.8" y="75.9" width="38.4" height="130.1" rx="3" fill="#0c7c80"/><text x="32.0" y="69.9" font-size="11" text-anchor="middle" fill="#5b6675">31,6 mil</text><text x="32.0" y="228" font-size="12" text-anchor="middle" fill="#1b2430">jan/26</text><rect x="76.8" y="49.3" width="38.4" height="156.7" rx="3" fill="#0c7c80"/><text x="96.0" y="43.3" font-size="11" text-anchor="middle" fill="#5b6675">38,1 mil</text><text x="96.0" y="228" font-size="12" text-anchor="middle" fill="#1b2430">fev/26</text><rect x="140.8" y="82.5" width="38.4" height="123.5" rx="3" fill="#0c7c80"/><text x="160.0" y="76.5" font-size="11" text-anchor="middle" fill="#5b6675">30,0 mil</text><text x="160.0" y="228" font-size="12" text-anchor="middle" fill="#1b2430">mar/26</text><rect x="204.8" y="74.0" width="38.4" height="132.0" rx="3" fill="#0c7c80"/><text x="224.0" y="68.0" font-size="11" text-anchor="middle" fill="#5b6675">32,1 mil</text><text x="224.0" y="228" font-size="12" text-anchor="middle" fill="#1b2430">abr/26</text><rect x="268.8" y="32.7" width="38.4" height="173.3" rx="3" fill="#0c7c80"/><text x="288.0" y="26.7" font-size="11" text-anchor="middle" fill="#5b6675">42,1 mil</text><text x="288.0" y="228" font-size="12" text-anchor="middle" fill="#1b2430">mai/26</text><rect x="332.8" y="36.6" width="38.4" height="169.4" rx="3" fill="#0c7c80"/><text x="352.0" y="30.6" font-size="11" text-anchor="middle" fill="#5b6675">41,2 mil</text><text x="352.0" y="228" font-size="12" text-anchor="middle" fill="#1b2430">jun/26</text><rect x="396.8" y="67.0" width="38.4" height="139.0" rx="3" fill="#0c7c80"/><text x="416.0" y="61.0" font-size="11" text-anchor="middle" fill="#5b6675">33,8 mil</text><text x="416.0" y="228" font-size="12" text-anchor="middle" fill="#1b2430">jul/26</text><rect x="460.8" y="56.4" width="38.4" height="149.6" rx="3" fill="#0c7c80"/><text x="480.0" y="50.4" font-size="11" text-anchor="middle" fill="#5b6675">36,4 mil</text><text x="480.0" y="228" font-size="12" text-anchor="middle" fill="#1b2430">ago/26</text><rect x="524.8" y="24.0" width="38.4" height="182.0" rx="3" fill="#0c7c80"/><text x="544.0" y="18.0" font-size="11" text-anchor="middle" fill="#5b6675">44,3 mil</text><text x="544.0" y="228" font-size="12" text-anchor="middle" fill="#1b2430">set/26</text><rect x="588.8" y="60.9" width="38.4" height="145.1" rx="3" fill="#0c7c80"/><text x="608.0" y="54.9" font-size="11" text-anchor="middle" fill="#5b6675">35,3 mil</text><text x="608.0" y="228" font-size="12" text-anchor="middle" fill="#1b2430">out/26</text></svg>
+<h2>Top 5 produtos</h2>
+<table><thead><tr><th>Produto</th><th class='n'>Receita</th></tr></thead><tbody><tr><td>Jaqueta</td><td class='n'>R$ 63.652,02</td></tr><tr><td>Moletom</td><td class='n'>R$ 54.475,46</td></tr><tr><td>Vestido</td><td class='n'>R$ 39.619,05</td></tr><tr><td>Shorts</td><td class='n'>R$ 35.042,11</td></tr><tr><td>Blusa</td><td class='n'>R$ 34.883,64</td></tr></tbody></table>
+<h2>Receita por região</h2>
+<table><thead><tr><th>Região</th><th class='n'>Receita</th></tr></thead><tbody><tr><td>Sudeste</td><td class='n'>R$ 79.867,49</td></tr><tr><td>Nordeste</td><td class='n'>R$ 73.949,11</td></tr><tr><td>Sul</td><td class='n'>R$ 71.737,80</td></tr><tr><td>Centro-Oeste</td><td class='n'>R$ 69.758,24</td></tr><tr><td>Norte</td><td class='n'>R$ 69.605,69</td></tr></tbody></table>
+<h2>Receita por vendedor</h2>
+<table><thead><tr><th>Vendedor</th><th class='n'>Receita</th></tr></thead><tbody><tr><td>João</td><td class='n'>R$ 83.618,55</td></tr><tr><td>Diego</td><td class='n'>R$ 78.373,74</td></tr><tr><td>Bruno</td><td class='n'>R$ 71.869,68</td></tr><tr><td>Carla</td><td class='n'>R$ 66.936,83</td></tr><tr><td>Ana</td><td class='n'>R$ 64.119,52</td></tr></tbody></table>
+
+<h2>Qualidade dos dados</h2>
+<div class="qualidade">
+<p>Foram lidas <b>1.024</b> linhas e usadas
+<b>953</b>. Descartadas: <b>71</b>.</p>
+<ul>
+<li>Linhas repetidas: 25</li>
+<li>Data inválida: 0</li>
+<li>Quantidade vazia, negativa ou inválida: 46</li>
+<li>Preço inválido: 0</li>
+<li>Desconto inválido: 0</li>
+</ul>
+<p class="sub">Uma mesma linha pode ter mais de um problema, por isso a soma
+pode passar do total de descartadas.</p>
+</div>
+</main>
+</body>
+</html>
